@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>@ViewData["Title"]</h1>
+            <p>@ViewData["Message"]</p>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Application Information</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Application Name:</strong></td>
+                                <td>Docker Assessment MVC Application</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Framework:</strong></td>
+                                <td>ASP.NET Core 8.0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Database:</strong></td>
+                                <td>Entity Framework Core (In-Memory)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Container:</strong></td>
+                                <td>Docker</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Environment:</strong></td>
+                                <td>@Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Server Time:</strong></td>
+                                <td>@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Features</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✓ MVC Pattern</li>
+                        <li class="list-group-item">✓ Entity Framework Core</li>
+                        <li class="list-group-item">✓ RESTful API</li>
+                        <li class="list-group-item">✓ Swagger Documentation</li>
+                        <li class="list-group-item">✓ Docker Support</li>
+                        <li class="list-group-item">✓ Bootstrap UI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Assessment Requirements</h3>
+                </div>
+                <div class="card-body">
+                    <p>This application demonstrates the following skills:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Docker Skills</h5>
+                            <ul>
+                                <li>Creating Dockerfiles</li>
+                                <li>Building Docker images</li>
+                                <li>Running containers locally</li>
+                                <li>Container orchestration</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Azure Skills</h5>
+                            <ul>
+                                <li>Azure Container Registry</li>
+                                <li>Azure Web Apps</li>
+                                <li>Container deployment</li>
+                                <li>Cloud configuration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
